@@ -1,15 +1,15 @@
 import streamlit as st
 
-st.title('Webapp to calculate largest of 3 numbers')
+st.title('Calculate largest among 3 numbers')
 
 st.header('_Enter your inputs here:_ ')
 
-number1 = st.number_input('Insert first number')
-number2 = st.number_input('Insert second number')
-number3 = st.number_input('Insert third number')
+num1 = st.number_input('Enter first number')
+num2 = st.number_input('Enter second number')
+num3 = st.number_input('Enter third number')
 
 def maximum():
-  lis = [number1 , number2 , number3]
+  lis = [num1 , num2 , num3]
   a = max(lis)
   st.success(f"Maximum = {a}")
 
